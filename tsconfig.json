@@ -11,7 +11,11 @@
         "experimentalDecorators": true,
         "declaration": true,
         "removeComments": true,
-        "incremental": true
+        "incremental": true,
+        "paths": {
+            "@/*": ["./*"]
+        }
+        
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules", "dist"]
