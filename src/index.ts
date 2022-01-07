@@ -1,9 +1,12 @@
 import * as express from 'express';
+import { config as configDotenv } from 'dotenv';
 import initRouter from './routes';
+
+configDotenv();
 
 const app = express();
 initRouter(app);
 
-app.listen(3333, () => {
-    console.info(`Servidor na porta 3333`);
+app.listen(process.env.PORT, () => {
+    console.info(`Servidor na porta ${process.env.PORT}`);
 });
