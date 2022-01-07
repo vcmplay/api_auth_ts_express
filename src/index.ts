@@ -1,4 +1,5 @@
-import * as express from 'express';
+import "reflect-metadata";
+import express from 'express';
 import { config as configDotenv } from 'dotenv';
 import initRouter from './routes';
 
